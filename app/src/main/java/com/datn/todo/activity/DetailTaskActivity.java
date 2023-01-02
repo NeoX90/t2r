@@ -57,10 +57,10 @@ public class DetailTaskActivity extends AppCompatActivity {
         title.setText(task.getTaskDescrption());
         description.setText(task.getTaskTitle());
         if (task.isComplete()) {
-            status.setText("Complete");
+            status.setText("Hoàn thành");
             status.setTextColor(Color.GREEN);
         } else {
-            status.setText("In doing");
+            status.setText("Đang làm");
             status.setTextColor(Color.RED);
         }
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {

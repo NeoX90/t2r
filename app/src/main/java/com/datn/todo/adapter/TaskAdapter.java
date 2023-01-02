@@ -35,8 +35,8 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder
     private LayoutInflater inflater;
     private List<Task> taskListAll;
     private List<Task> taskList;
-    public SimpleDateFormat dateFormat = new SimpleDateFormat("EE dd MMM yyyy", Locale.US);
-    public SimpleDateFormat inputDateFormat = new SimpleDateFormat("dd-M-yyyy", Locale.US);
+    public SimpleDateFormat dateFormat = new SimpleDateFormat("EE dd MMM yyyy", Locale.US );
+    public SimpleDateFormat inputDateFormat = new SimpleDateFormat("dd-M-yyyy", Locale.US );
     Date date = null;
     String outputDateString = null;
     CreateTaskBottomSheetFragment.setRefreshListener setRefreshListener;
@@ -257,10 +257,10 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder
             });
 
             if (task.isComplete()) {
-                _status.setText("Completed");
+                _status.setText("Hoàn thành");
                 _status.setTextColor(context.getResources().getColor(android.R.color.holo_green_light));
             } else {
-                _status.setText("In doing");
+                _status.setText("Đang làm");
                 _status.setTextColor(context.getResources().getColor(android.R.color.holo_red_light));
 
             }

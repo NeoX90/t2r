@@ -114,6 +114,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:singleLine="true"
+                    android:textStyle="bold"
                     android:textColor="@color/colorAccent"
                     android:textSize="10sp"
                     tools:text="17:00" />
@@ -124,6 +125,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
+                    android:textStyle="bold"
                     android:text="In doing"
                     android:textColor="@color/colorText"
                     android:textSize="10sp" />

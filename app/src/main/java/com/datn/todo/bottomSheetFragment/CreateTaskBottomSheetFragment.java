@@ -120,9 +120,9 @@ public class CreateTaskBottomSheetFragment extends BottomSheetDialogFragment {
 
         if (isEdit) {
             showTaskFromId();
-            title.setText("Edit a task");
-            description.setText("Fill the details below to edit a task into your To Do");
-            addTask.setText("Edit Task");
+            title.setText("Sửa ghi chú");
+            description.setText("Thêm thắt nội dung bên dưới để chỉnh sửa ghi chú");
+            addTask.setText("Sửa");
         }
     }
 
@@ -138,16 +138,16 @@ public class CreateTaskBottomSheetFragment extends BottomSheetDialogFragment {
 
     public boolean validateFields() {
         if (addTaskTitle.getText().toString().equalsIgnoreCase("")) {
-            Toast.makeText(activity, "Please enter a valid title", Toast.LENGTH_SHORT).show();
+            Toast.makeText(activity, "Vui lòng nhập tiêu đề", Toast.LENGTH_SHORT).show();
             return false;
         } else if (addTaskDescription.getText().toString().equalsIgnoreCase("")) {
-            Toast.makeText(activity, "Please enter a valid description", Toast.LENGTH_SHORT).show();
+            Toast.makeText(activity, "Vui lòng nhập nội dung", Toast.LENGTH_SHORT).show();
             return false;
         } else if (taskDate.getText().toString().equalsIgnoreCase("")) {
-            Toast.makeText(activity, "Please enter date", Toast.LENGTH_SHORT).show();
+            Toast.makeText(activity, "Vui lòng nhập ngày", Toast.LENGTH_SHORT).show();
             return false;
         } else if (taskTime.getText().toString().equalsIgnoreCase("")) {
-            Toast.makeText(activity, "Please enter time", Toast.LENGTH_SHORT).show();
+            Toast.makeText(activity, "Vui lòng nhập giờ", Toast.LENGTH_SHORT).show();
             return false;
         } else {
             return true;
@@ -185,7 +185,7 @@ public class CreateTaskBottomSheetFragment extends BottomSheetDialogFragment {
                     createAnAlarm();
                 }
                 setRefreshListener.refresh();
-                Toast.makeText(getActivity(), "Your event is been added", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "ghi chú của bạn đã được thêm", Toast.LENGTH_SHORT).show();
                 dismiss();
 
             }

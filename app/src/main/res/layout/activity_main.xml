@@ -23,7 +23,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
-                android:text="All Task"
+                android:text="Danh sách ghi chú"
                 android:textColor="@color/colorText"
                 android:textSize="28sp"
                 android:textStyle="bold"
@@ -122,7 +122,7 @@
             android:background="@drawable/bg_gray_border"
             android:textSize="16sp"
             app:layout_constraintTop_toTopOf="parent"
-            app:queryHint="Search content" />
+            app:queryHint="Nội dung tìm kiếm" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/taskRecycler"

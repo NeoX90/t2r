@@ -45,7 +45,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="3dp"
                 android:layout_marginTop="8dp"
-                android:text="Description"
+                android:text="Nội dung"
                 android:layout_marginHorizontal="16dp"
                 android:textColor="@color/colorTextDescription" />
 
@@ -69,7 +69,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
-                android:text="Time"
+                android:text="Thời gian"
                 android:textColor="@color/colorTextDescription" />
 
             <EditText
@@ -90,7 +90,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
-                android:text="Date"
+                android:text="Ngày hẹn"
                 android:textColor="@color/colorTextDescription" />
 
             <EditText
@@ -111,7 +111,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
-                android:text="Status"
+                android:text="Trạng thái"
                 android:textColor="@color/colorTextDescription" />
 
             <TextView

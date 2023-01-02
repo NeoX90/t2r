@@ -29,7 +29,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="20dp"
-                android:text="Complete the task?"
+                android:text="Ghi chú đã hoàn thành"
                 android:textColor="@android:color/black"
                 android:textSize="20sp"
                 android:textStyle="bold"/>
@@ -40,7 +40,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="8dp"
-                android:text="Are you sure you want to mark this task as completed?"
+                android:text="Vui lòng xác nhận ghi chú này đã được hoàn thành ?"
                 android:textColor="@android:color/black"
                 android:textSize="16sp" />
 
@@ -59,7 +59,7 @@
                     android:layout_marginBottom="30dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="Cancel"
+                    android:text="Quay lại"
                     android:textAllCaps="false"
                     android:textColor="@color/colorCommonBlue"
                     android:textSize="14sp"
@@ -74,7 +74,7 @@
                     android:layout_marginBottom="30dp"
                     android:layout_weight="1"
                     android:background="@drawable/btn_background"
-                    android:text="Complete"
+                    android:text="Hoàn thành"
                     android:textAllCaps="false"
                     android:textColor="@color/colorPrimary"
                     android:textSize="14sp" />

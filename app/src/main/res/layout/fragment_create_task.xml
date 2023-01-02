@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
-            android:text="Add a task"
+            android:text="Thêm ghi chú"
             android:textColor="@color/colorText"
             android:textSize="22sp"
             android:textStyle="bold" />
@@ -37,7 +37,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginHorizontal="40dp"
             android:layout_marginTop="10dp"
-            android:text="Fill the details below to add a task into your To Do"
+            android:text="Hoàn thành các nội dung bên dưới để tạo mới ghi chú"
             android:textAlignment="center"
             android:textColor="@color/colorTextDescription"
             android:textSize="16sp" />
@@ -47,7 +47,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="3dp"
             android:layout_marginTop="30dp"
-            android:text="Title "
+            android:text="Tiêu đề "
             android:textColor="@color/colorTextDescription" />
 
         <EditText
@@ -65,7 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="3dp"
             android:layout_marginTop="8dp"
-            android:text="Task description"
+            android:text="Nội dung"
             android:textColor="@color/colorTextDescription" />
 
         <EditText
@@ -97,7 +97,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="3dp"
-                    android:text="Date"
+                    android:text="Ngày hẹn"
                     android:textColor="@color/colorTextDescription" />
 
                 <EditText
@@ -122,7 +122,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="3dp"
-                    android:text="Time"
+                    android:text="Thời gian"
                     android:textColor="@color/colorTextDescription" />
 
                 <EditText
@@ -143,7 +143,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-            android:text="Add task" />
+            android:text="Thêm mới" />
 
     </LinearLayout>
 </ScrollView>

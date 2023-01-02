@@ -4,16 +4,16 @@
 
     <item
         android:id="@+id/menuDelete"
-        android:title="Delete"
+        android:title="Xoá"
         app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/menuUpdate"
-        android:title="Update"
+        android:title="Sửa"
         app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/menuComplete"
-        android:title="Complete"
+        android:title="Hoàn thành"
         app:showAsAction="ifRoom" />
 </menu>

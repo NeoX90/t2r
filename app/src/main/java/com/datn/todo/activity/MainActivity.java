@@ -187,7 +187,7 @@ public class MainActivity extends BaseActivity implements CreateTaskBottomSheetF
             if (result == null) return;
             String todo = result.get(0);
             if (ToDoExtractor.INSTANCE.extractVietnameseTimeAndDate(todo) != null) {
-                task.setTaskTitle("To Do");
+                task.setTaskTitle("Ghi chú nhanh");
                 task.setTaskDescrption(ToDoExtractor.INSTANCE.extractVietnameseDesc(todo));
 
                 String[] timeAndDate = ToDoExtractor.INSTANCE.extractVietnameseTimeAndDate(todo).split("/");
@@ -196,7 +196,7 @@ public class MainActivity extends BaseActivity implements CreateTaskBottomSheetF
 
                 createTask(task);
             } else if (ToDoExtractor.INSTANCE.extractTimeAndDate(todo) != null) {
-                task.setTaskTitle("To Do");
+                task.setTaskTitle("Ghi chú nhanh");
                 task.setTaskDescrption(ToDoExtractor.INSTANCE.extractDesc(todo));
 
                 String[] timeAndDate = ToDoExtractor.INSTANCE.extractTimeAndDate(todo).split("/");
@@ -205,7 +205,7 @@ public class MainActivity extends BaseActivity implements CreateTaskBottomSheetF
 
                 createTask(task);
             } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O && ToDoExtractor.INSTANCE.extractVietnameseTimeAndDateSecondFilter(todo) != null) {
-                task.setTaskTitle("To Do");
+                task.setTaskTitle("Ghi chú nhanh");
                 task.setTaskDescrption(ToDoExtractor.INSTANCE.extractVietnameseDesc(todo));
 
                 String[] timeAndDate = ToDoExtractor.INSTANCE.extractVietnameseTimeAndDateSecondFilter(todo).split("/");
