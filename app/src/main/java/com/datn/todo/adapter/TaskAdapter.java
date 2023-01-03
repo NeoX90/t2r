@@ -275,14 +275,104 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder
                 String dd = items1[1];
                 String month = items1[2];
 
-                _day.setText(day);
+                _day.setText(getVietnameseWeekday(day));
                 _date.setText(dd);
-                _month.setText(month);
+                _month.setText(getVietnameseMonth(month));
 
             } catch (Exception e) {
                 e.printStackTrace();
             }
         }
+    }
+
+    private String getVietnameseMonth(String month) {
+        String vnMonth = "";
+        switch (month) {
+            case "Jan": {
+                vnMonth = "1";
+                break;
+            }
+            case "Feb": {
+                vnMonth = "2";
+                break;
+            }
+            case "Mar": {
+                vnMonth = "3";
+                break;
+            }
+            case "Apr": {
+                vnMonth = "4";
+                break;
+            }
+            case "May": {
+                vnMonth = "5";
+                break;
+            }
+            case "Jun": {
+                vnMonth = "6";
+                break;
+            }
+            case "Jul": {
+                vnMonth = "7";
+                break;
+            }
+            case "Aug": {
+                vnMonth = "8";
+                break;
+            }
+            case "Sep": {
+                vnMonth = "9";
+                break;
+            }
+            case "Oct": {
+                vnMonth = "10";
+                break;
+            }
+            case "Nov": {
+                vnMonth = "11";
+                break;
+            }
+            case "Dec": {
+                vnMonth = "12";
+                break;
+            }
+        }
+        return vnMonth;
+    }
+
+    private String getVietnameseWeekday(String weekday) {
+        String vnWeekday = "";
+        switch (weekday) {
+            case "Mon": {
+                vnWeekday = "T2";
+                break;
+            }
+            case "Tue": {
+                vnWeekday = "T3";
+                break;
+            }
+            case "Wed": {
+                vnWeekday = "T4";
+                break;
+            }
+            case "Thu": {
+                vnWeekday = "T5";
+                break;
+            }
+            case "Fri": {
+                vnWeekday = "T6";
+                break;
+            }
+            case "Sat": {
+                vnWeekday = "T7";
+                break;
+            }
+            case "Sun": {
+                vnWeekday = "CN";
+                break;
+            }
+        }
+        return vnWeekday;
     }
 
     public interface OnTaskItemClickListener {
